@@ -6,7 +6,18 @@
 }
 
 nav.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #323232;
+  padding: 10px 0;
+  transition: 0.3s;
+}
+
+nav.menu.smallerMenu {
+  padding: 0;
+  transition: 0.3s;
 }
 
 nav.menu ul.list {
@@ -32,7 +43,7 @@ nav.menu ul.list li.item a {
 }
 
 nav.menu ul.list li.item a:hover {
-  color: white;
+  color: rgb(228, 228, 228);
   transition: 0.3s;
 }
 
@@ -41,7 +52,7 @@ nav.menu ul.list li.item a:after {
   position: absolute;
   width: 90%;
   height: 3px;
-  background-color: white;
+  background-color: rgb(228, 228, 228);
   bottom: 0;
   left: 0;
   transform: scaleX(0);
@@ -52,4 +63,23 @@ nav.menu ul.list li.item a:after {
 nav.menu ul.list li.item a:hover:after {
   transform-origin: bottom left;
   transform: scaleX(1);
+}
+
+section.aboutMe {
+  padding: 80px 0;
+  height: 30vh;
+}
+
+section.aboutMe h1.welcome {
+  font-size: 28px;
+  margin: 0 0 30px 5vw;
+  letter-spacing: 2px;
+}
+
+section.aboutMe p.info {
+  background-color: orange;
+}
+
+section.aboutMe div.moreInfo {
+  background-color: blue;
 }
