@@ -202,26 +202,71 @@ div.bestProject h2.shortInfo--best {
   font-size: 32px;
 }
 
-/* 
-div.bestProject h2.shortInfo--best span {
-  color: #000;
-} */
+h2.shortInfo--best a {
+  color: #dd3f31;
+  text-decoration: none;
+  text-shadow: 1px 2px 12px #000;
+  transition: 0.2s;
+}
 
-div.bestProject img.imgOfProject--best {
+h2.shortInfo--best a:hover {
+  color: black;
+  text-shadow: 0 0 0 #000;
+  letter-spacing: 2px;
+}
+
+div.bestProject div.slider {
+  display: flex;
+  justify-content: center;
+  position: relative;
   grid-column: 1/2;
   grid-row: 2/4;
-  width: 80%;
-  margin-left: 50px;
+}
+
+div.slider i.fa-arrow-left,
+i.fa-arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 8px;
+  /* border-radius: 50%;
+  border: 2px solid black; */
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+div.slider i.fa-arrow-left {
+  left: 8%;
+}
+
+div.slider i.fa-arrow-right {
+  right: 8%;
+}
+
+div.bestProject img.imgOfProject--best {
+  position: relative;
+  width: 90%;
   border: 3px solid black;
   border-radius: 5px;
+}
+
+div.bestProject p.numberOfPhotos {
+  position: absolute;
+  bottom: 5%;
+  right: 8%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
 }
 
 div.bestProject div.shortDescription {
   grid-column: 2/3;
   grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  padding-top: 40px;
-  /* box-shadow: 400px 2px 125px rgb(28, 27, 27); */
+  box-shadow: 400px 0px 200px rgb(28, 27, 27);
 }
 
 div.shortDescription p {
