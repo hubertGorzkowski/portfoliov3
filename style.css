@@ -119,7 +119,7 @@ div.moreInfo p.more {
   font-size: 20px;
 }
 
-div.moreInfo button.readMore {
+button.readMore {
   position: relative;
   display: block;
   margin: 15px auto;
@@ -135,11 +135,11 @@ div.moreInfo button.readMore {
   transition: 0.3s;
 }
 
-div.moreInfo button.readMore:hover {
+button.readMore:hover {
   color: white;
 }
 
-div.moreInfo button.readMore::before {
+button.readMore::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -185,7 +185,7 @@ div.curve::after {
   transform: translate(-4%, 40%);
 }
 
-main.projects div.bestProject {
+div.bestProject {
   display: grid;
   grid-template-columns: 5fr 3fr;
   grid-template-rows: auto auto 120px;
@@ -199,7 +199,7 @@ div.bestProject h2.shortInfo--best {
   grid-row: 1/2;
   padding: 30px 10px 50px;
   text-align: center;
-  font-size: 32px;
+  font-size: 34px;
 }
 
 h2.shortInfo--best a {
@@ -229,8 +229,6 @@ i.fa-arrow-right {
   top: 50%;
   transform: translateY(-50%);
   padding: 5px 8px;
-  /* border-radius: 50%;
-  border: 2px solid black; */
   font-size: 32px;
   cursor: pointer;
   z-index: 2;
@@ -271,7 +269,7 @@ div.bestProject div.shortDescription {
 
 div.shortDescription p {
   width: 80%;
-  font-size: 20px;
+  font-size: 22px;
   color: #1a1b1d;
   padding: 5px;
 }
@@ -288,6 +286,74 @@ div.bestProject div.moreInfo {
   text-align: center;
 }
 
-img {
-  width: 20%;
+div.projectWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  isolation: isolate;
+  margin: 20px 0;
+  padding: 100px 0px;
+}
+
+div.projectWrapper::after {
+  content: "";
+  background-color: #104350;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform: skewY(-1deg);
+}
+
+div.project {
+  width: 45%;
+  margin: 20px;
+}
+
+div.project h2.shortInfo {
+  padding-bottom: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+div.project img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+footer.contact {
+  padding: 60px;
+  background-color: #171515;
+  color: #bcbcbc;
+}
+
+footer.contact p {
+  padding: 10px;
+  text-align: center;
+}
+
+footer.contact p.contact {
+  font-size: 32px;
+}
+
+footer.contact p.github {
+  font-size: 20px;
+}
+
+footer.contact p.github a {
+  color: #dd3f31;
+  text-decoration: none;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+footer.contact p.github a:hover {
+  letter-spacing: 2px;
+}
+
+footer.contact p.email {
+  font-size: 20px;
 }
