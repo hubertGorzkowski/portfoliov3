@@ -13,10 +13,10 @@ window.addEventListener("scroll", menuAnimation);
 
 //slider in div bestProject
 const bestProjectImages = [
-  "picture/aimTraining1.PNG",
-  "picture/aimTraining2.PNG",
-  "picture/aimTraining3.PNG",
-  "picture/aimTraining4.PNG",
+  "..//picture/aimTraining1.PNG",
+  "..//picture/aimTraining2.PNG",
+  "..//picture/aimTraining3.PNG",
+  "..//picture/aimTraining4.PNG",
 ];
 
 let numberOfPhoto = 1;
@@ -30,14 +30,14 @@ const slider = function () {
     } else {
       numberOfPhoto--;
     }
-    image.src = `picture/aimTraining${numberOfPhoto}.PNG`;
+    image.src = `..//picture/aimTraining${numberOfPhoto}.PNG`;
   } else if (this.classList.value == "fas fa-arrow-right arrowSlider") {
     if (numberOfPhoto == 4) {
       numberOfPhoto = 1;
     } else {
       numberOfPhoto++;
     }
-    image.src = `picture/aimTraining${numberOfPhoto}.PNG`;
+    image.src = `..//picture/aimTraining${numberOfPhoto}.PNG`;
   }
   infoAboutPhoto.innerHTML = `${numberOfPhoto}/4`;
 };
