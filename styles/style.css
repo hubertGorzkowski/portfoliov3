@@ -9,67 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-nav.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #202731;
-  padding: 10px 0;
-  z-index: 3;
-  transition: 0.3s;
-}
-
-nav.menu.smallerMenu {
-  padding: 0;
-  transition: 0.3s;
-}
-
-nav.menu ul.list {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 5vw;
-  list-style: none;
-}
-
-nav.menu ul.list li.item {
-  padding: 5px;
-}
-
-nav.menu ul.list li.item a {
-  position: relative;
-  display: inline-block;
-  padding: 15px 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bcbcbc;
-  letter-spacing: 1px;
-}
-
-nav.menu ul.list li.item a:hover {
-  color: rgb(228, 228, 228);
-  transition: 0.3s;
-}
-
-nav.menu ul.list li.item a:after {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 3px;
-  background-color: rgb(228, 228, 228);
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.25s linear;
-}
-
-nav.menu ul.list li.item a:hover:after {
-  transform-origin: bottom left;
-  transform: scaleX(1);
-}
-
 section.aboutMe {
   position: relative;
   display: flex;
@@ -170,7 +109,7 @@ div.curve::before {
   border-radius: 100% 50%;
   width: 55%;
   height: 100%;
-  background-color: rgb(125, 52, 52);
+  background-color: #7d3434;
   transform: translate(85%, 60%);
 }
 
@@ -190,7 +129,7 @@ div.bestProject {
   grid-template-columns: 5fr 3fr;
   grid-template-rows: auto auto 120px;
   padding: 100px 0 80px;
-  background-color: rgb(125, 52, 52);
+  background-color: #7d3434;
   color: #090909;
 }
 
@@ -289,27 +228,33 @@ div.bestProject div.moreInfo {
 div.projectWrapper {
   display: flex;
   justify-content: space-evenly;
+  background-color: #2171a3;
   position: relative;
-  isolation: isolate;
-  margin: 20px 0;
+  margin: 60px 0;
   padding: 100px 0px;
 }
 
-div.projectWrapper::after {
+div.projectWrapper::after,
+div.projectWrapper::before {
   content: "";
-  background-color: #104350;
+  background-color: #2171a3;
   position: absolute;
   z-index: -1;
   inset: 0;
+}
+
+div.projectWrapper::after {
   transform: skewY(-1deg);
+}
+
+div.projectWrapper::before {
+  transform: skewY(1deg);
 }
 
 div.project {
   width: 45%;
   margin: 20px;
   padding: 20px;
-  border: 2px solid black;
-  background-color: #175261;
 }
 
 div.project h2.shortInfo {
@@ -322,7 +267,6 @@ div.project img {
   display: block;
   width: 90%;
   margin: 0 auto;
-  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 30px;
 }

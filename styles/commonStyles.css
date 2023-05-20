@@ -58,10 +58,25 @@ nav.menu ul.list li.item a:after {
   left: 0;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.25s linear;
+  transition: transform 0.25s ease-out;
 }
 
 nav.menu ul.list li.item a:hover:after {
   transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+nav.menu ul.list li.item a.active {
+  color: white;
+}
+
+nav.menu ul.list li.item a.active:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  background-color: rgb(228, 228, 228);
+  bottom: 0;
+  left: 0;
   transform: scaleX(1);
 }
