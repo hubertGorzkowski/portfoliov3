@@ -53,7 +53,6 @@ const slider = function (arrow, images, photoCounter, picture, whichCounter) {
 				numberOfPhoto2++;
 			}
 		}
-		console.log(images);
 		picture.src = images[numberOfPhoto2 - 1];
 		photoCounter.innerHTML = `${numberOfPhoto2}/${images.length}`;
 	} else if (whichCounter == 3) {
@@ -96,11 +95,15 @@ const whichSlider = function () {
 			"..//picture/memoryGame3.PNG",
 			"..//picture/memoryGame2.PNG",
 		];
-		let photoCounter = document.querySelector(
-			"div.slider p.numberOfPhotosOther1"
-		);
+		let photoCounter = document.querySelector("p.numberOfPhotosOther1");
 		let whichCounter = 2;
 		const picture = document.querySelector(".imgOfProject1");
+		slider(this, images, photoCounter, picture, whichCounter);
+	} else if (this.dataset.whickslider == "stopwatchSlider") {
+		const images = ["..//picture/stopwatch1.PNG", "..//picture/stopwatch2.PNG"];
+		let photoCounter = document.querySelector("p.numberOfPhotosOther2");
+		let whichCounter = 3;
+		const picture = document.querySelector(".imgOfProject2");
 		slider(this, images, photoCounter, picture, whichCounter);
 	}
 };
