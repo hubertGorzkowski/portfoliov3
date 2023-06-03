@@ -1,82 +1,86 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 nav.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #202731;
-  padding: 10px 0;
-  z-index: 3;
-  transition: 0.3s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #202731;
+	padding: 10px 0;
+	z-index: 3;
+	transition: 0.3s;
 }
 
 nav.menu.smallerMenu {
-  padding: 0;
-  transition: 0.3s;
+	padding: 0;
+	transition: 0.3s;
 }
 
 nav.menu ul.list {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 5vw;
-  list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 5vw;
+	list-style: none;
 }
 
 nav.menu ul.list li.item {
-  padding: 5px;
+	padding: 5px;
 }
 
 nav.menu ul.list li.item a {
-  position: relative;
-  display: inline-block;
-  padding: 15px 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bcbcbc;
-  letter-spacing: 1px;
+	position: relative;
+	display: inline-block;
+	padding: 15px 20px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bcbcbc;
+	letter-spacing: 1px;
 }
 
 nav.menu ul.list li.item a:hover {
-  color: rgb(228, 228, 228);
-  transition: 0.3s;
+	color: rgb(228, 228, 228);
+	transition: 0.3s;
 }
 
 nav.menu ul.list li.item a:after {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 3px;
-  background-color: rgb(228, 228, 228);
-  bottom: 0;
-  left: 0;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 3px;
+	background-color: rgb(228, 228, 228);
+	bottom: 0;
+	left: 0;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
 }
 
 nav.menu ul.list li.item a:hover:after {
-  transform-origin: bottom left;
-  transform: scaleX(1);
+	transform-origin: bottom left;
+	transform: scaleX(1);
 }
 
 nav.menu ul.list li.item a.active {
-  color: white;
+	color: white;
 }
 
 nav.menu ul.list li.item a.active:after {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 3px;
-  background-color: rgb(228, 228, 228);
-  bottom: 0;
-  left: 0;
-  transform: scaleX(1);
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 3px;
+	background-color: rgb(228, 228, 228);
+	bottom: 0;
+	left: 0;
+	transform: scaleX(1);
 }
