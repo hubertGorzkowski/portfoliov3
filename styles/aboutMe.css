@@ -1,5 +1,122 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+	background-color: #e7e7e7;
+}
+
+section.whoami {
+	display: flex;
+	justify-content: space-around;
+	margin: 110px 0 0 5vw;
+	padding: 15px 100px;
+	color: #090909;
+}
+
+div.infoAboutMe {
+	width: 50%;
+	margin: 20px 80px 0 0;
+}
+
+div.infoAboutMe h1.welcome {
+	font-size: 34px;
+	padding: 5px 35px;
+}
+
+div.infoAboutMe h2.basicInformations {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+div.moreInfo p.more {
+	font-size: 20px;
+	text-align: center;
+}
+
+main.aboutMe {
+	display: flex;
+	margin-top: 50px;
+}
+
+section.whatWantToKnow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 5vh;
+	padding-bottom: 70px;
+	width: 40%;
+	height: 50vh;
+}
+
+section.whatWantToKnow h1.choice {
+	padding: 20px;
+	text-transform: uppercase;
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+div.circle {
+	position: relative;
+	width: 12vw;
+	height: 12vw;
+	margin: 20px 50px 0 70px;
+	border: 3px solid black;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+div.circle p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 28px;
+}
+
+div.myRoad {
+	background-color: #7d3434;
+}
+
+div.mySkills {
+	background-color: #1a5b84;
+}
+
+div.circle:hover {
+	transform: scale(1.1);
+}
+
+div.myRoad:hover {
+	box-shadow: 0 0 100px 15px #7d3434;
+}
+
+div.mySkills:hover {
+	box-shadow: 0 0 100px 15px #1a5b84;
+}
+
+section.myRoad {
+	background-color: #7d3434;
+	margin: 20px;
+	padding: 20px 5px;
+	width: 60%;
+	border-radius: 10px;
+}
+
+section.myRoad h2.road {
+	padding: 20px 0 10px;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div.text {
+	margin: 15px;
+	padding: 10px;
+	font-size: 24px;
+}
+
+div.text:nth-child(even) {
+	color: rgb(184, 168, 168);
+}
+
+div.text:nth-child(odd) {
+	color: #0f1010;
 }
