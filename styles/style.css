@@ -245,37 +245,3 @@ div.projectsWrapper p.shortDescription {
 	border-radius: 15px;
 	text-align: center;
 }
-
-footer.contact {
-	padding: 60px;
-	background-color: #171515;
-	color: #bcbcbc;
-}
-
-footer.contact p {
-	padding: 10px;
-	text-align: center;
-}
-
-footer.contact p.contact {
-	font-size: 32px;
-}
-
-footer.contact p.github {
-	font-size: 20px;
-}
-
-footer.contact p.github a {
-	color: #dd3f31;
-	text-decoration: none;
-	font-size: 22px;
-	transition: 0.2s;
-}
-
-footer.contact p.github a:hover {
-	letter-spacing: 2px;
-}
-
-footer.contact p.email {
-	font-size: 20px;
-}
