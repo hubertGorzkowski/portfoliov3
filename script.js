@@ -13,11 +13,6 @@ window.addEventListener("scroll", menuAnimation);
 
 //sliders
 
-// const stopwatchImages = [
-// 	"..//picture/stopwatch1.PNG",
-// 	"..//picture/stopwatch2.PNG",
-// ];
-
 let numberOfPhoto1 = 1;
 let numberOfPhoto2 = 1;
 let numberOfPhoto3 = 1;
@@ -75,7 +70,7 @@ const slider = function (arrow, images, photoCounter, picture, whichCounter) {
 };
 
 const whichSlider = function () {
-	if (this.dataset.whickslider == "bestSlider") {
+	if (this.dataset.whichslider == "bestSlider") {
 		const images = [
 			"..//picture/aimTraining1.PNG",
 			"..//picture/aimTraining2.PNG",
@@ -89,7 +84,7 @@ const whichSlider = function () {
 		const picture = document.querySelector(".imgOfProject--best");
 
 		slider(this, images, photoCounter, picture, whichCounter);
-	} else if (this.dataset.whickslider == "memorySlider") {
+	} else if (this.dataset.whichslider == "memorySlider") {
 		const images = [
 			"..//picture/memoryGame1.PNG",
 			"..//picture/memoryGame3.PNG",
@@ -99,7 +94,7 @@ const whichSlider = function () {
 		let whichCounter = 2;
 		const picture = document.querySelector(".imgOfProject1");
 		slider(this, images, photoCounter, picture, whichCounter);
-	} else if (this.dataset.whickslider == "stopwatchSlider") {
+	} else if (this.dataset.whichslider == "stopwatchSlider") {
 		const images = ["..//picture/stopwatch1.PNG", "..//picture/stopwatch2.PNG"];
 		let photoCounter = document.querySelector("p.numberOfPhotosOther2");
 		let whichCounter = 3;
@@ -111,4 +106,16 @@ const whichSlider = function () {
 const arrows = document.querySelectorAll("i.arrowSlider");
 arrows.forEach((arrow) => {
 	arrow.addEventListener("click", whichSlider);
+});
+
+//change main in subpage aboutMe
+
+const circles = [...document.querySelectorAll("div.circle")];
+
+const changeContent = function () {
+	console.log(this);
+};
+
+circles.forEach((circle) => {
+	circle.addEventListener("click", changeContent);
 });
