@@ -111,9 +111,20 @@ arrows.forEach((arrow) => {
 //change main in subpage aboutMe
 
 const circles = [...document.querySelectorAll("div.circle")];
+const roadContent = document.querySelector("div.wrapperRoad");
+const skillsContent = document.querySelector("div.wrapperSkills");
+const mainAboutMe = document.querySelector("main.aboutMe");
 
 const changeContent = function () {
-	console.log(this);
+	if (this.dataset.whichcircle == "road") {
+		roadContent.style.left = "0%";
+		skillsContent.style.left = "150%";
+		mainAboutMe.style.backgroundColor = "#7d3434";
+	} else if (this.dataset.whichcircle == "skills") {
+		roadContent.style.left = "150%";
+		skillsContent.style.left = "0%";
+		mainAboutMe.style.backgroundColor = "#1a5b84";
+	}
 };
 
 circles.forEach((circle) => {
