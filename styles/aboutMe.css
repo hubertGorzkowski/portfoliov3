@@ -36,6 +36,7 @@ main.aboutMe {
 	margin: 30px 0 50px;
 	background-color: #7d3434;
 	overflow: hidden;
+	transition: 1s;
 }
 
 main.aboutMe::before {
@@ -78,12 +79,28 @@ div.circle {
 	transition: 0.3s;
 }
 
+div.circle.focus {
+	transform: scale(1.1);
+	color: rgb(184, 168, 168);
+	box-shadow: 0 0 50px 5px black;
+	letter-spacing: 3px;
+	transition: 0.5s;
+}
+
 div.circle p {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	width: 100%;
 	font-size: 28px;
+	text-align: center;
+	transition: 0.5s;
+}
+
+div.circle.focus p {
+	font-size: 40px;
+	transition: 0.5s;
 }
 
 div.myRoad {
@@ -94,10 +111,6 @@ div.mySkills {
 	background-color: #1a5b84;
 }
 
-div.circle:hover {
-	transform: scale(1.1);
-}
-
 div.myRoad:hover {
 	box-shadow: 0 0 50px 5px #7d3434;
 }
@@ -106,13 +119,29 @@ div.mySkills:hover {
 	box-shadow: 0 0 50px 5px #1a5b84;
 }
 
-section.myRoad {
+section.area {
+	position: relative;
 	width: 60%;
 }
 
-section.myRoad h2.road {
-	/* padding: 0px 0 10px; */
-	font-size: 36px;
+.wrapperRoad,
+.wrapperSkills {
+	position: absolute;
+	top: 0;
+	transition: 1s ease-out;
+}
+
+.wrapperRoad {
+	left: 0;
+}
+
+.wrapperSkills {
+	left: 150%;
+}
+
+section.area h2.title {
+	margin: 35px 0 0;
+	font-size: 44px;
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
