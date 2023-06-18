@@ -82,7 +82,7 @@ div.circle {
 div.circle.focus {
 	transform: scale(1.1);
 	color: rgb(184, 168, 168);
-	box-shadow: 0 0 50px 5px black;
+	box-shadow: 0 0 20px 2px rgb(66, 66, 66);
 	letter-spacing: 3px;
 	transition: 0.5s;
 }
@@ -101,7 +101,7 @@ div.circle p {
 div.circle.focus p {
 	font-size: 40px;
 	transition: 0.5s;
-	text-shadow: 2px 2px 2px #000;
+	text-shadow: 1px 1px 3px #000;
 }
 
 div.myRoad {
