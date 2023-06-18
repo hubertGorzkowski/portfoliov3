@@ -101,6 +101,7 @@ div.circle p {
 div.circle.focus p {
 	font-size: 40px;
 	transition: 0.5s;
+	text-shadow: 2px 2px 2px #000;
 }
 
 div.myRoad {
@@ -140,7 +141,7 @@ section.area {
 }
 
 section.area h2.title {
-	margin: 35px 0 0;
+	margin: 35px 0;
 	font-size: 44px;
 	text-align: center;
 	text-transform: uppercase;
@@ -158,5 +159,85 @@ div.text:nth-child(even) {
 }
 
 div.text:nth-child(odd) {
-	color: #0f1010;
+	color: #1a1b1f;
+}
+
+div.wrapperSkills {
+	width: 100%;
+}
+
+div.wrapperSkills div.text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+
+div.wrapperSkills div.text:nth-child(even) {
+	background-color: #206fa1;
+}
+
+div.wrapperSkills div.text:nth-child(odd) {
+	background-color: #175277;
+}
+
+div.text h3.technologies {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: #090909;
+	letter-spacing: 2px;
+}
+
+div.technology {
+	margin: 20px;
+}
+
+div.technology i {
+	width: 100%;
+	text-align: center;
+	font-size: 54px;
+}
+
+div.technology p {
+	font-size: 26px;
+}
+
+div.technology.html {
+	color: #f06529;
+}
+
+div.technology.css {
+	color: #264de4;
+}
+
+div.technology.js {
+	color: #f0db4f;
+}
+
+div.technology.react {
+	color: #61dbfb;
+}
+
+div.technology.github {
+	color: #211f1f;
+}
+
+div.technology.node {
+	color: #68a063;
+}
+
+div.technology.sass {
+	color: #cd6799;
+}
+
+div.technology.github {
+	color: #211f1f;
+}
+
+div.technology.npm {
+	color: #cc3534;
 }
